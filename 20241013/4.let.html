@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=100;//宣告一個變數，可以變化的數
+        let a='A';//err,let可保護不會被重新宣告
+        
+        let a='b';
+
+if(true){//let 在區塊作用域底，可獨立宣告成為{}內變數且獨自使用
+   //let a='A';
+   //let b='B';
+   let a='A',b='B';
+   console.log(a,b);
+}
+console.log(a);
+console.log(b);
+//////////////////////////////////
+const c=100;//宣告一個常數，不可變化且常駐的數，目前屬於全域常數
+
+if(true){
+     const c='C';//{}常數，我獨特用得，不會獨到外面的c
+    console.log(c);
+}
+/////////////////////
+console.clear();
+
+let aa=null;//塞一個值為"沒有東西的特別object"，有值為null
+let bb;//undefined 就是沒有任何東西指定給他，沒有賦值予
+let cc='';//string空字串
+ let dd=5*'A';//NaN為非數字 Not a number
+
+
+</script>
+</body>
+</html>

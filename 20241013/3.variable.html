@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        a=100;//臨時變數
+        var b=200;//宣告變數，跟瀏覽器宣告一個變數存在
+        var c;//宣告，只是還沒定義任何值，目前讀到得值是undefined                                   
+        
+        function test(){
+            var d=100;//宣告在一個fn內，他作用於這個fn作用域內
+           console.log(b);//b是一個全域變數，我可以讀到他    
+           console.log(d);//d得到100
+        }
+        test();
+        console.log(b);
+        //console.log(d);//不認d，因為她是個區間變數，我無法得知他
+        console.clear();
+
+        function test2(){
+            var d=100;
+            console.log(d);
+        }
+         test2();
+         console.log(d);
+         
+
+        </script>
+</body>
+</html>

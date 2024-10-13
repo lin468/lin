@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        if (true) {
+            console.log('is true');
+        }
+
+        if (200 < 100) {
+            //當if的()為true，會執行{}代碼
+            console.log('is true');
+        } else {
+            //當if的()為false，會執行{}代碼
+            console.log('is false');
+        }
+
+        console.clear();
+
+
+        a = 150
+        if  (a > 200) {
+            console.log('超過200');
+        }else if (a > 100) {
+             console.log('超過100');
+         }else{
+            console.log('100以下');
+         }
+
+        console.log('done');
+        console.clear();
+
+///////////////////////////////////////////
+        const
+        height=190;
+        face=true;
+        cash=50000;
+          
+        if(height>180&&face&&cash>10000){
+            console.log('他是高富帥，100分')
+            }else{
+                console.log('他不是高富帥，0-99分')
+            }
+
+        
+        
+
+       //高帥or一個就好，and一定要有錢，才願意交往
+        if((cash>10000)&&(height>180||face)){//if()內，不一定要放boolean，只要有值就可以當true，要小心使用
+            console.log('還滿意,可以試試交往');
+            }
+            else{
+                console.log('還是當朋友有就好')
+            }
+         
+            console.clear()
+
+
+            //三元運算符
+            let day=7;
+            
+            let mag;
+            if (day>5)mag='假日';
+            else msg='平日';
+
+         let msg=day>5?'假日':'平日';
+
+
+       
+
+
+     
+    </script>
+</body>
+
+</html>
