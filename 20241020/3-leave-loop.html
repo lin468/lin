@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for(i=0;i<10;i++){
+            if(i===4)continue;//pass跳過住回合，不在看接下來得todo
+            if(i==7)break;//破壞這個迴圈，直接結束for
+            console.log(i);
+        }
+
+
+        //return，通常在fn，內控制這個fn返回什麼，當下fn得工作結束
+        function parrot(str){
+            //console.log('hello');
+            //return'done'
+            //console.log('hello');
+        }
+        //if (str===underfined){
+        //如果直接把變數(1,2,3))當boolean去思考，有東西會是true
+        //反之0,null,undefined,空字串都是false
+         if(str===underfined){
+            console.log('....鸚鵡看著你什麼');
+         
+         }
+        
+      /*  let j=4;
+        while(j>0){
+            console.log('阿~~');
+            if(str==='mute')return;
+            console.log(`${str}~~~~~~`);
+            j--;
+        }
+         parrot('mute');
+        //if(!str){
+        console.log('....鸚鵡看著你什麼')*/
+    </script>
+ 
+</body>
+</html>

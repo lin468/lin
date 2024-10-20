@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       //Array陣列
+
+        let a='A';//value of str(字串)
+        let b=12;//val of num
+        
+
+        let myArrAA=new Array();//正式宣告，透過建構(產生個大型物件，裡面包含多個物件)來完成，一般人偷懶不會用
+        let myArrAB=[];//空陣列的語法糖果，暴力指定變數
+        let myArrAC=new Array(1,2,'A',true);
+
+        let numArr=['A',true,3];//value of array 變數可以是n個值
+                                //每個值都有自己的index(索引)
+        //索引 myArr[位置]
+        //改索引 myArr[2]=3在瀏覽器
+        //多一個變數 加後面myArr.push(變數) 加前面unshift
+        //減一個變數，減後面myArr.pop(變數) 減在前面shift
+        //工作上不喜歡用
+         
+        let aryInit=[1,2,3];//預設值
+        let errCloneAry=aryInit;//預設Ary因為指定，他們的記憶位置都一樣，叫記憶體汙染
+        
+        let realCloneAry=[...aryInit];//解構與重構，將陣列拆開，重新組合新陣列，在指定給realCloneAry
+        
+        let v=[1,2,3];//被複製的固定陣列
+        let c=[...v];//重構出一個乾淨得陣列，指定給c
+        c.push('A');
+        console.log(c);//v和c是不同得陣列，記憶體位置不同
+
+
+        //////////////////////////////////
+        minAry['A','B','C'];
+        //bigAry=[hello.minAry];//二維陣列
+         bigAry=[['A','B','C']
+        [10,['XX','YY'],300]];//巢狀array
+
+
+   </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     //while，是只有根據條件來決定要不要重複執行，直到條件不成立
+
+        let i=0;
+        while(i<10){//判定成立
+            console.log('do',i);
+            i++;//結束語句，使判定有變化得可能性，才能結束迴圈
+        }
+        console.log('done');
+
+
+        console.clear();
+
+
+        //do while 相較於while版本，先執行，在判定要不要再做一次
+        let j=0;
+         do{
+            console.log(j);
+            j++;
+
+         }while(j<5);
+
+         console.log('done');
+        
+        
+
+    </script>
+</body>
+</html>
