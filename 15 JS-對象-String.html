@@ -1,0 +1,35 @@
+<!-- 文檔類型 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 字符集UTF-8 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-對象-String</title>
+</head>
+<body>
+    <script>
+      //創建字符串對象
+      var str=new String("Hello String");
+      var str=" Hello String ";
+       console.log(str);
+      
+      //length 字符串長度
+      console.log(str.length);
+     
+      //charAt 返回指定位置字符串
+       console.log(str.charAt(3));
+      
+       //indexOf 檢索字符串
+      console.log(str.indexOf("lo"));
+      
+      //trim 去除字符串左右兩邊空格
+      var s=str.trim();
+      console.log(s);
+
+      //substring(start.,end)---開始引索,結束引索(算頭不算尾)
+     console.log(s.substring(0,4));
+      
+     </script>
+</body>
+</html>

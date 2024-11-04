@@ -1,0 +1,28 @@
+<!-- 文檔類型 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 字符集UTF-8 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>JS引入方式</title>
+</head>
+<body>
+    <script>
+        // 函數 function
+        //定義方式一
+    /*  function add(a,b){//參數不須定義類型
+        return a+b;//返回值也不需要定義類型
+      }
+      */
+      //定義方式二
+      var add=function(a,b){
+        return a+b;
+      }
+        //調用
+        var a=add(10,20);
+        alert(a);
+
+     </script>
+</body>
+</html>

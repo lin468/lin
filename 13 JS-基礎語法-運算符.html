@@ -1,0 +1,65 @@
+<!-- 文檔類型 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 字符集UTF-8 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>JS引入方式</title>
+</head>
+<body>
+    <script>
+        var age =20;
+        var _age="20";
+        var $age=20;
+    // ==會進行類型轉換
+    // ===不會自動進行類型轉換
+      /* alert(age==20);//true
+        alert(age==_age);//true
+        alert(age===_age);//false
+        alert(age===$age);//false */
+
+        // 字符串轉換為boolean
+        //parseInt
+        //  alert (parseInt("12"));//12
+        //  alert (parseInt ("12A5") )//12
+        //  alert (parseInt ( "A3C"))//NaN
+
+         //其他類型轉換為boolean
+         /*Namber :0和NaN為false,其他均為true
+           String:空字符串為false,其他均為true
+           Nall 和  undefined:false,其他均為false
+         */
+        if(0){//false
+            alert("轉換為false");
+          }
+        if(NaN){//false
+            alert("轉換為false");
+        }
+        if(1){//true
+            alert("除了0和NaN其他均轉換為true");
+        }
+        if("")//false
+          {
+            alert("轉換為false");
+          }
+        if(" ")//true
+          {
+            alert("空格也算true");
+          }
+        if("a")//true
+          {
+            alert("除了空字符串其他均轉換為true");
+          }
+        if(Null)//false
+        {
+            alert("轉換為false");
+        }
+        if(undefined)//false
+        {
+            alert("轉換為false");
+        }
+          
+     </script>
+</body>
+</html>
